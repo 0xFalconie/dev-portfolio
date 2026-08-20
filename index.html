@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Aaron Peter Fanto (0xFalconie) - Software Engineer portfolio. Backend development, PHP, MySQL, Python, networking and open-source projects from Nigeria.">
+  <meta name="keywords" content="Aaron Peter Fanto, 0xFalconie, Software Engineer, Backend Developer, PHP Developer, Portfolio, Nigeria, Computer Science">
+  <meta name="author" content="Aaron Peter Fanto">
+  <meta property="og:title" content="0xFalconie | Software Engineer Portfolio">
+  <meta property="og:description" content="I build secure, scalable and user-friendly web applications while solving real-world problems with technology.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://github.com/0xFalconie">
+  <meta property="og:image" content="images/profile/profile.jpg">
+  <title>0xFalconie | Software Engineer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#home" class="logo" aria-label="0xFalconie home">0xFalconie</a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#github">GitHub</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark/light mode">
+          <i class="fas fa-moon" id="theme-icon"></i>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Toggle mobile menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div class="container hero-container">
+      <div class="hero-content">
+        <p class="hero-greeting">Hi, I'm <span class="accent">0xFalconie</span></p>
+        <h1 class="hero-name">Aaron Peter Fanto</h1>
+        <p class="hero-roles">
+          <span id="typed-text"></span><span class="cursor">|</span>
+        </p>
+        <p class="hero-desc">
+          I build secure, scalable and user-friendly web applications while solving real-world problems with technology.
+        </p>
+        <div class="hero-btns">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="assets/Aaron_Peter_Fanto_CV.pdf" class="btn btn-outline" download>Download CV</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="profile-wrapper">
+          <img src="images/profile/profile.jpg" alt="Aaron Peter Fanto - 0xFalconie" class="profile-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="profile-placeholder" style="display:none;">
+            <i class="fas fa-user"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="about section" id="about">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            I'm a Computer Science graduate and software engineer based in Nigeria, passionate about building reliable backend systems and practical web applications. I focus on writing clean, maintainable code that solves real problems for users.
+          </p>
+          <p>
+            My interests span backend development, system design, networking, and open-source collaboration. I enjoy turning ideas into working software—whether it's automating institutional processes, connecting communities, or improving operational efficiency.
+          </p>
+          <p>
+            Outside of coding I explore network infrastructure, contribute to open-source projects, and continuously learn new tools and patterns that help me ship better solutions.
+          </p>
+        </div>
+        <div class="about-facts">
+          <div class="fact-card">
+            <i class="fas fa-graduation-cap"></i>
+            <div>
+              <h3>Education</h3>
+              <p>B.Sc. Computer Science</p>
+            </div>
+          </div>
+          <div class="fact-card">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <h3>Location</h3>
+              <p>Nigeria</p>
+            </div>
+          </div>
+          <div class="fact-card">
+            <i class="fas fa-code"></i>
+            <div>
+              <h3>Focus</h3>
+              <p>Backend Development</p>
+            </div>
+          </div>
+          <div class="fact-card">
+            <i class="fas fa-lightbulb"></i>
+            <div>
+              <h3>Interests</h3>
+              <p>Web Development, Networking, Open Source</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="skills section" id="skills">
+    <div class="container">
+      <h2 class="section-title">Tech Stack</h2>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3><i class="fas fa-server"></i> Backend</h3>
+          <div class="skill-tags">
+            <span class="skill-tag"><i class="fab fa-php"></i> PHP</span>
+            <span class="skill-tag"><i class="fas fa-database"></i> MySQL</span>
+            <span class="skill-tag"><i class="fab fa-python"></i> Python</span>
+            <span class="skill-tag"><i class="fas fa-flask"></i> Flask</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3><i class="fas fa-laptop-code"></i> Frontend</h3>
+          <div class="skill-tags">
+            <span class="skill-tag"><i class="fab fa-html5"></i> HTML5</span>
+            <span class="skill-tag"><i class="fab fa-css3-alt"></i> CSS3</span>
+            <span class="skill-tag"><i class="fab fa-js"></i> JavaScript</span>
+            <span class="skill-tag"><i class="fab fa-bootstrap"></i> Bootstrap</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3><i class="fas fa-tools"></i> Tools</h3>
+          <div class="skill-tags">
+            <span class="skill-tag"><i class="fab fa-git-alt"></i> Git</span>
+            <span class="skill-tag"><i class="fab fa-github"></i> GitHub</span>
+            <span class="skill-tag"><i class="fas fa-code"></i> VS Code</span>
+            <span class="skill-tag"><i class="fas fa-server"></i> XAMPP</span>
+            <span class="skill-tag"><i class="fas fa-laptop"></i> Laragon</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3><i class="fas fa-network-wired"></i> Networking</h3>
+          <div class="skill-tags">
+            <span class="skill-tag"><i class="fas fa-router"></i> Cisco</span>
+            <span class="skill-tag"><i class="fas fa-network-wired"></i> MikroTik</span>
+            <span class="skill-tag"><i class="fas fa-sitemap"></i> TCP/IP</span>
+            <span class="skill-tag"><i class="fas fa-project-diagram"></i> Computer Networking</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <h2 class="section-title">Featured Projects</h2>
+      <div class="projects-grid" id="projects-grid">
+        <!-- Dynamically generated by projects.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section class="experience section" id="experience">
+    <div class="container">
+      <h2 class="section-title">Experience</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <h3>Software Development</h3>
+            <ul>
+              <li>PHP & MySQL web application development</li>
+              <li>JavaScript frontend integration</li>
+              <li>Building full-stack solutions for real-world use cases</li>
+              <li>System design and database modeling</li>
+            </ul>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <h3>Networking Experience</h3>
+            <ul>
+              <li>Network and router configuration</li>
+              <li>Structured cabling</li>
+              <li>CCTV installation and setup</li>
+              <li>MikroTik configuration and management</li>
+            </ul>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <h3>Open Source / Web3</h3>
+            <ul>
+              <li>Active GitHub contributions and public repositories</li>
+              <li>Open-source project collaboration</li>
+              <li>Exploring Web3 development concepts and tools</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GitHub -->
+  <section class="github-section section" id="github">
+    <div class="container">
+      <h2 class="section-title">GitHub</h2>
+      <div class="github-header">
+        <a href="https://github.com/0xFalconie" target="_blank" rel="noopener noreferrer" class="github-profile-link">
+          <i class="fab fa-github"></i> @0xFalconie
+        </a>
+      </div>
+      <div class="repos-grid" id="repos-grid">
+        <div class="loading-repos">Loading repositories...</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <h2 class="section-title">Get In Touch</h2>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <p>I'm open to software engineering roles, freelance projects, internships, hackathons and open-source collaboration. Feel free to reach out.</p>
+          <div class="contact-links">
+            <a href="mailto:afanto74@gmail.com" class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <span>afanto74@gmail.com</span>
+            </a>
+            <a href="https://github.com/0xFalconie" target="_blank" rel="noopener noreferrer" class="contact-item">
+              <i class="fab fa-github"></i>
+              <span>github.com/0xFalconie</span>
+            </a>
+            <a href="#" class="contact-item" aria-label="LinkedIn (placeholder)">
+              <i class="fab fa-linkedin"></i>
+              <span>LinkedIn</span>
+            </a>
+            <a href="#" class="contact-item" aria-label="X / Twitter (placeholder)">
+              <i class="fab fa-x-twitter"></i>
+              <span>X / Twitter</span>
+            </a>
+            <a href="#" class="contact-item" aria-label="WhatsApp (placeholder)">
+              <i class="fab fa-whatsapp"></i>
+              <span>WhatsApp</span>
+            </a>
+          </div>
+        </div>
+        <form class="contact-form" id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required placeholder="Your name">
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" required placeholder="Subject">
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required placeholder="Your message..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+          <p class="form-note">Replace <code>YOUR_FORM_ID</code> in the form action with your Formspree endpoint, or connect any backend/email service.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <a href="#home" class="footer-logo">0xFalconie</a>
+        <p class="footer-tagline">Building useful software, one project at a time.</p>
+        <div class="footer-social">
+          <a href="https://github.com/0xFalconie" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="mailto:afanto74@gmail.com" aria-label="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+          <a href="#" aria-label="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="#" aria-label="X / Twitter">
+            <i class="fab fa-x-twitter"></i>
+          </a>
+        </div>
+        <p class="copyright">© 2026 FalconieSync. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/projects.js"></script>
+  <script src="js/typing.js"></script>
+  <script src="js/github.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
