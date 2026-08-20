@@ -13,7 +13,7 @@ const projects = [
     description: "A web-based student clearance platform designed to automate and simplify the graduation clearance process.",
     image: "images/projects/clearance-system.jpg",
     technologies: ["PHP", "MySQL", "JavaScript"],
-    github: null,
+    github: "https://github.com/0xFalconie/Online_Clearance_System",
     demo: null
   },
   {
